@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuitarShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/accordion.css">
+</head>
+<body>
+    <header>
+        <img src="img//logo.svg" alt="" class="logo">
+        <nav>
+            <ul class="list">
+                <li class="list_item">
+                    Акустическая
+                </li>
+                <li class="list_item">
+                    Классическая
+                </li>
+                <li class="list_item">
+                    Электрогитара
+                </li>
+                <li class="list_item">
+                    Бас-гитара
+                </li>
+            </ul>
+        </nav>
+        <button class="btn-theme">Смена темы</button>
+        <div class="switch">
+            <input type="checkbox" id="toggle" class="switch_inp">
+            <label for="toggle" class="switch_label"></label>
+        </div>
+        <button class="burger_btn" id="btn_menu">
+            <img src="img//Vector.svg" alt="" class="burger_img">
+        </button>
+        <div class="burger_menu" id="menu-1">
+            <ul class="burger_list">
+                <li class="burger_item">Вход</li>
+                <li class="burger_item">Модель</li>
+                <li class="burger_item">Акции</li>
+                <li class="burger_item">Корзина</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="first_section flex-row-center">
+            <div class="first_content flex-col-center">
+                <h1 class="first_title">GuitarShop</h1>
+                <p>Качественные, красивые, недорогие гитары. Акустические, классические, электрогитары, бас-гитары.</p>
+                <h3>Цена: 240$</h3>
+                <button class="first_button" id="bfn" onclick="buy()">В корзину</button>
+            </div>
+            <div class="first_img">
+                <img src="img/img.png" alt="">
+            </div>
+        </section>
+        <section class="second_section">
+            <h1 class="second_title">НАШИ ТОВАРЫ</h1>
+            <div class="itc-slider" data-slider="itc-slider">
+                <div class="itc-slider-wrapper">
+                  <div class="itc-slider-items">
+                    <div class="itc-slider-item">
+
+                        <div class="card">
+                            <img src="https://avatars.mds.yandex.net/get-mpic/5194541/img_id2317109519216057203.png/9" alt="" class="card_img">
+                            <h1 class="card_title">Акустическая гитара</h1>
+                        </div>
+
+                    </div>
+                       <div class="itc-slider-item">
+
+                            <div class="card">
+                                <img src="https://kartinkof.club/uploads/posts/2022-09/thumbs/1662433626_34-kartinkof-club-p-novie-i-krasivie-kartinki-elektrogitara-40.jpg" alt="" class="card_img">
+                                <h1 class="card_title">Электрогитара</h1>
+                            </div>
+
+                        </div>
+                    <div class="itc-slider-item">
+
+                            <div class="card">
+                                <img src="https://neopix.ru/upload/resize_cache/iblock/b0b/500_500_140cd750bba9870f18aada2478b24840a/6h3x91gqrtluis2hray3jpc2jgk6stm2.jpg" alt="" class="card_img">
+                                <h1 class="card_title">Классическая гитара</h1>
+                            </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                <button class="itc-slider-btn itc-slider-btn-next"></button>
+              </div>
+        </section>
+        <section class="third_section ">
+            <div class="third_section_div">
+                <div class="map">
+                    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Af7fdd140b7b8ce78376e429d4d95d1c94f27b77368e6d21ffee93f220a1f714c&amp;source=constructor" width="800" height="720" frameborder="0"></iframe>
+                </div>
+                <div class="third_content flex-col-center">
+
+                    <div class="contact">
+                        <div class ="kontact">
+                            <img src="img/Frame 1510.svg" alt="" class="line_contact">
+
+                            <div>
+                                <img src="img/Vector (1).svg" alt="">
+                                <p class="ip">Сыркашинская гора</p>
+                            </div>
+
+                            <div>
+                                <img src="img/Vector (2).svg" alt="">
+                                <p>с 9:00 до 21:00</p>
+                            </div>
+
+                            <div>
+                                <img src="img/evaPhoneFill0.svg" alt="">
+                                <p>8 (495) 248-14-80, 8 (800) 444-19-43 </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="quest">
+                        <h4>Остались вопросы?</h4>
+                        <span>Оставьте свой номер и мы свяжемся с вами в ближайшее время</span>
+                        <p>Имя</p>
+                        <div class="name">
+                            <p>Радион</p>
+                        </div>
+                        <p>Фамилия</p>
+                        <div class="familiya">
+                            <p>Чижов</p>
+                        </div>
+                        <p>Телефон</p>
+                        <div class="phone">
+                            <p>+7 (...) ... -... - ...</p>
+                        </div>
+                        <div class="zvonok">
+                            <p>Заказать звонок</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="four_section">
+            <div class="accordion" id="accordion-1">
+                <div class="accordion__item accordion__item_show">
+                  <div class="accordion__header">
+                    Заголовок 1
+                  </div>
+                  <div class="accordion__body">
+                    Содержимое 1
+                  </div>
+                </div>
+                <div class="accordion__item">
+                  <div class="accordion__header">
+                    Заголовок 2
+                  </div>
+                  <div class="accordion__body">
+                  Содержимое 2
+                  </div>
+                </div>
+              </div>
+        </section>
+    </main>
+
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/theme.js"></script>
+</body>
+</html>
